@@ -1,0 +1,54 @@
+*{
+    margin: 0; /* loại bỏ khoảng cách mặc định */
+    padding: 0; /* loại bỏ khoảng cách mặc định */
+    box-sizing: border-box; /* bao gồm padding và border trong kích thước phần tử */
+    font-family: 'Poppins', sans-serif; /* font chữ */
+}
+
+.container{ 
+    width: 100%;
+    height: 100vh; 
+    background: #e3f9ff; /* màu nền */
+    display: flex; /* sử dụng flexbox */
+    justify-content: center; /* căn giữa theo chiều ngang */
+    align-items: center; /* căn giữa theo chiều dọc */
+}
+
+.calculator{
+    background: #3a4452; /* màu nền */
+    padding: 30px; /* khoảng cách bên trong */
+    border-radius: 10px; /* bo tròn góc */
+}
+.calculator form input{
+    border: 0; /* bỏ viền */
+    outline: none; /* bỏ viền khi focus */
+    width: 60px; /* chiều rộng */
+    height: 60px; /* chiều cao */
+    border-radius: 10px; /* bo tròn góc */
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),8px 8px 15px rgba(0,0,0,0.1); /* hiệu ứng đổ bóng */
+    background: transparent; /* nền trong suốt */
+    font-size: 20px; /* kích thước chữ */
+    color: #fff; /* màu chữ */
+    cursor: pointer; /* con trỏ chuột */
+    margin: 10px; /* khoảng cách giữa các nút */
+}
+
+form .display{
+    display: flex; /* sử dụng flexbox */
+    justify-content: flex-end; /* căn phải */
+    margin: 20px 0; /* khoảng cách trên dưới */
+}
+form .display input{
+    text-align: right; /* căn phải */
+    flex: 1; /* chiếm toàn bộ chiều rộng */
+    font-size: 45px; /* kích thước chữ */
+    box-shadow: none; /* bỏ hiệu ứng đổ bóng */
+}
+
+form input.equal{
+    width: 145px; /* chiều rộng nút dấu bằng */
+}
+
+form input.operator{
+    color: #33ffd8; /* màu chữ */
+}
